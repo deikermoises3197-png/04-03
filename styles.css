@@ -1,0 +1,115 @@
+/* Configuración general */
+body {
+    background-image:url(img/fondo.jpg) ;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Estilos específicos para integrar el carrusel */
+        .main-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            gap: 30px;
+        }
+
+        .swiper {
+            width: 90%;
+            max-width: 500px;
+            height: 300px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border: 5px solid white;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Ajuste para el contenedor de botones que ya tenías */
+        .menu-container {
+            margin-top: 10px;
+        }
+
+/* Contenedor principal */
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Estilo de los botones/links */
+.link-amor, .link-especial, .corazon {
+    text-decoration: none;
+    background: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    color: #d81b60;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Efecto al pasar el mouse */
+.link-amor:hover, .link-especial:hover, .corazon:hover {
+    transform: translateY(-7px) scale(1.1);
+    background: #f06292;
+    color: white;
+    box-shadow: 0 6px 20px rgba(240, 98, 146, 5);
+}
+
+/* Estilo específico para los corazones pequeños */
+.corazon {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+    /* Contenedor principal adaptable */
+    .main-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px; /* Menos padding en móviles */
+        gap: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Carrusel Responsivo */
+    .swiper {
+        width: 85vw;        /* 85% del ancho de la pantalla */
+        max-width: 400px;   /* No crecerá más de esto en PC */
+        height: 55vh;       /* 55% de la altura de la pantalla */
+        max-height: 450px;  /* Altura máxima para que no se deforme */
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        border: 4px solid white;
+        margin: 20px auto;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Recorta la imagen para llenar el espacio sin estirarse */
+    }
+
+    /* Ajuste de los botones para que no se vean amontonados en móvil */
+    .menu-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 10px;
+        width: 100%;
+    }
